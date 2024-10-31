@@ -9,26 +9,26 @@ Release = {}
 NbIso = {}
 
 #---
-#  Data from ENDF-B/I to VI.8 (United States)
+#  Data from ENDF/B-I to VI.8 (United States)
 #---
 
 # https://www.nndc.bnl.gov/csewg/docs/endf-manual.pdf
 # Appendix I: A History of the ENDF System and its Formats and Procedures
-NbIso['ENDF-B/I'] = 58 # "The evaluations for ENDF/B-I were taken from the existing evaluations of neutron interactions for 58 materials"
-Release['ENDF-B/I'] = 1968 # "Version I of the ENDF/B data file was released in July 1968"
-Release['ENDF-B/II'] = 1970 # "Version II of the ENDF/B data file was released in August 1970." Compatible with ENDF comments (August or september 1970)
-Release['ENDF-B/III'] = 1972 # "Version III of the ENDF/B data file was released in late 1972." Compatible with ENDF comments (1972)
-Release['ENDF-B/IV'] = 1975 # "Version IV of the ENDF/B data file was released in February 1975" Compatible with ENDF comments (REV-JUN75)
-Release['ENDF-B/V.2'] = 1985 # "Version V.2 was released in January 1985." In ENDF files, it says "endf/b-v.2"
+NbIso['ENDF/B-I'] = 58 # "The evaluations for ENDF/B-I were taken from the existing evaluations of neutron interactions for 58 materials"
+Release['ENDF/B-I'] = 1968 # "Version I of the ENDF/B data file was released in July 1968"
+Release['ENDF/B-II'] = 1970 # "Version II of the ENDF/B data file was released in August 1970." Compatible with ENDF comments (August or september 1970)
+Release['ENDF/B-III'] = 1972 # "Version III of the ENDF/B data file was released in late 1972." Compatible with ENDF comments (1972)
+Release['ENDF/B-IV'] = 1975 # "Version IV of the ENDF/B data file was released in February 1975" Compatible with ENDF comments (REV-JUN75)
+Release['ENDF/B-V.2'] = 1985 # "Version V.2 was released in January 1985." In ENDF files, it says "endf/b-v.2"
 # https://www.nndc.bnl.gov/endfdocs/ENDF-102-1970-1.pdf
 # BNL-50274, p.163-165
-NbIso['ENDF-B/II'] = 26 + 25 + 10 # = 61, which is also output of ENDF.sh *AND* verified by scrolling
-# Output of ENDF.sh (verified by scrolling)
-NbIso['ENDF-B/III'] = 133
-NbIso['ENDF-B/IV'] = 90
-NbIso['ENDF-B/V.2'] = 18+4+11+6+3+2+7+20+8+7+2+5+13+3+3+3+9+1+1+1+1+1+1
+NbIso['ENDF/B-II'] = 26 + 25 + 10 # = 61, which is also output of ENDF.sh *AND* verified by scrolling
+# Output of ENDF.sh (verified by scrolling manually)
+NbIso['ENDF/B-III'] = 133
+NbIso['ENDF/B-IV'] = 90
+NbIso['ENDF/B-V.2'] = 18+4+11+6+3+2+7+20+8+7+2+5+13+3+3+3+9+1+1+1+1+1+1
 
-# Nota for ENDF-B/VI.8. https://www.nndc.bnl.gov/endf-b6.8/ states:
+# Nota for ENDF/B-VI.8. https://www.nndc.bnl.gov/endf-b6.8/ states:
 # "Neutron sublibrary contains data for 328 materials, out of which 13 are
 # elemental evaluations and 315 are isotopic." It appears to be plain wrong.
 # We found 329 materials with 16 elemental evaluations (C0, Mg0, Si0, S0, Cl0,
@@ -67,48 +67,51 @@ NbIso['ENDF-B/V.2'] = 18+4+11+6+3+2+7+20+8+7+2+5+13+3+3+3+9+1+1+1+1+1+1
 # In, Hf) are available both as such and also for each natural isotope.
 
 # A few isotopic breakdown were released later, after the elemental material :
-# elemental Si and Cl were released in ENDF-B/VI.0 and their breakdown in
-# ENDF-B/VI.5 and 8, respectively. But all the others, i.e. a large majority,
-# were released at the same time, in ENDF-B/VI.0. The only possible explanation
+# elemental Si and Cl were released in ENDF/B-VI.0 and their breakdown in
+# ENDF/B-VI.5 and 8, respectively. But all the others, i.e. a large majority,
+# were released at the same time, in ENDF/B-VI.0. The only possible explanation
 # is therefore the (real) intention to offer both possibilities, not meant
 # as a supersede. It can only be seen as a "convenience" they wish to offer.
 
 # Output of ENDF.sh
-NbIso['ENDF-B/VI.0'] = 320
-NbIso['ENDF-B/VI.1'] = 320
-NbIso['ENDF-B/VI.2'] = 320
-NbIso['ENDF-B/VI.3'] = 320
-NbIso['ENDF-B/VI.4'] = 322
-NbIso['ENDF-B/VI.5'] = 325
-NbIso['ENDF-B/VI.6'] = 325
-NbIso['ENDF-B/VI.7'] = 325
-NbIso['ENDF-B/VI.8'] = 329
+NbIso['ENDF/B-VI.0'] = 320
+NbIso['ENDF/B-VI.1'] = 320
+NbIso['ENDF/B-VI.2'] = 320
+NbIso['ENDF/B-VI.3'] = 320
+NbIso['ENDF/B-VI.4'] = 322
+NbIso['ENDF/B-VI.5'] = 325
+NbIso['ENDF/B-VI.6'] = 325
+NbIso['ENDF/B-VI.7'] = 325
+NbIso['ENDF/B-VI.8'] = 329
 
 # https://www.nndc.bnl.gov/endf-b6.8/index.html
-Release['ENDF-B/VI.0'] = 1990
-Release['ENDF-B/VI.1'] = 1991
-Release['ENDF-B/VI.2'] = 1993
-Release['ENDF-B/VI.3'] = 1995
-Release['ENDF-B/VI.4'] = 1996
-Release['ENDF-B/VI.5'] = 1998
-Release['ENDF-B/VI.6'] = 1999
-Release['ENDF-B/VI.7'] = 2000
-Release['ENDF-B/VI.8'] = 2001
+Release['ENDF/B-VI.0'] = 1990
+Release['ENDF/B-VI.1'] = 1991
+Release['ENDF/B-VI.2'] = 1993
+Release['ENDF/B-VI.3'] = 1995
+Release['ENDF/B-VI.4'] = 1996
+Release['ENDF/B-VI.5'] = 1998
+Release['ENDF/B-VI.6'] = 1999
+Release['ENDF/B-VI.7'] = 2000
+Release['ENDF/B-VI.8'] = 2001
 
 #---
-#  Data from ENDF-B/VII to VIII (United States)
+#  Data from ENDF/B-VII to VIII (United States)
 #---
 # Output of ENDF.sh
-NbIso['ENDF-B/VII.0'] = 393
-NbIso['ENDF-B/VII.1'] = 423
-NbIso['ENDF-B/VIII.0'] = 557
+NbIso['ENDF/B-VII.0'] = 393
+NbIso['ENDF/B-VII.1'] = 423
+NbIso['ENDF/B-VIII.0'] = 557
+NbIso['ENDF/B-VIII.1'] = 558
 
 # https://www.nndc.bnl.gov/endf-b7.0/ : "ENDF/B-VII.0 has been released on December 15, 2006"
-Release['ENDF-B/VII.0'] = 2006
+Release['ENDF/B-VII.0'] = 2006
 # https://www.nndc.bnl.gov/endf-b7.1/ : "[...] released the ENDF/B-VII.1 library on December 22, 2011"
-Release['ENDF-B/VII.1'] = 2011
+Release['ENDF/B-VII.1'] = 2011
 # https://www.nndc.bnl.gov/endf-b8.0/ : "On February 2, 2018, CSEWG released its latest revision of the ENDF/B library, ENDF/B-VIII.0."
-Release['ENDF-B/VIII.0'] = 2018
+Release['ENDF/B-VIII.0'] = 2018
+# https://www.nndc.bnl.gov/endf-releases/?version=B-VIII.1 : "Deposition Date 10/21/2024"
+Release['ENDF/B-VIII.1'] = 2024
 
 #---
 #  JENDL data (Japan)
@@ -159,9 +162,9 @@ Release['JEFF-3.1.2'] = 2012
 # https://www.oecd-nea.org/dbdata/jeff/jeff33/
 # "JEFF-3.3 was officially released on November 20, 2017."
 Release['JEFF-3.3'] = 2017
-# https://www.oecd-nea.org/dbdata/jeff/jeff40/t2/
-# "JEFF-4T2.2 (22/02/2023)"
-Release['JEFF-4T2.2'] = 2023
+# https://www.oecd-nea.org/dbdata/jeff/jeff40/t4/
+# "Last modified: 22 October 2024"
+Release['JEFF-4T4'] = 2024
 
 # Output of JEFF.sh
 NbIso['JEF-2.2'] = 313
@@ -170,13 +173,13 @@ NbIso['JEFF-3.1'] = 381
 NbIso['JEFF-3.1.1'] = 381
 NbIso['JEFF-3.1.2'] = 381
 NbIso['JEFF-3.3'] = 562
-NbIso['JEFF-4T2.2'] = 564
+NbIso['JEFF-4T4'] = 592
 
 #---
 #  TENDL data : "2800 isotopes living longer than 1 second"
 #  https://tendl.web.psi.ch/tendl_2021/tendl2021.html
 #----
-for year in list(range(2008, 2015)) + list(range(2015, 2023, 2)):
+for year in list(range(2008, 2015)) + list(range(2015, 2024, 2)):
     Release['TENDL-' + str(year)] = year
     NbIso['TENDL-' + str(year)] = 2800
 
@@ -217,8 +220,8 @@ for evaluation in Release.keys():
     evaluations.append(evaluation)
     years.append(Release[evaluation])
     NbIsos.append(NbIso[evaluation])
-    if evaluation.startswith('ENDF-B'):
-        colors.append(green) # As in ENDF-B/VIII logo : https://www.nndc.bnl.gov/endf-b8.0/
+    if evaluation.startswith('ENDF/B'):
+        colors.append(green) # As in ENDF/B-VIII logo : https://www.nndc.bnl.gov/endf-b8.0/
     elif evaluation.startswith('JEF'):
         colors.append(blue) # As in European flag
     elif evaluation.startswith('JENDL-'):
@@ -261,7 +264,7 @@ ax2.tick_params(right=True, labelright=True)
 # Add an axis label
 ax2.set(ylabel='Number of materials : isotopes, natural elements, etc.')
 # Let the future outside the figure (otherwise, that would be presomptuous)
-ax1.set_xlim(right = 2024)
+ax1.set_xlim(right = 2025)
 # https://stackoverflow.com/questions/1726391/matplotlib-draw-grid-lines-behind-other-graph-elements
 ax2.grid(linewidth = 0.5)
 ax2.set_axisbelow(True)
@@ -269,7 +272,7 @@ ax2.set_axisbelow(True)
 # https://stackoverflow.com/questions/47391702/how-to-make-a-colored-markers-legend-from-scratch
 # https://stackoverflow.com/questions/21285885/remove-line-through-marker-in-matplotlib-legend
 label1 = matplotlib.lines.Line2D([], [], marker = 'o', linestyle='None',
-        label = r'ENDF-B/$x$ (USA)', color = green)
+        label = r'ENDF/B-$x$ (USA)', color = green)
 label2 = matplotlib.lines.Line2D([], [], marker = 'o', linestyle='None',
         label = r'JEF-$x$ and JEFF-$x$' + ' (mainly Europe)', color = blue)
 label3 = matplotlib.lines.Line2D([], [], marker = 'o', linestyle='None',
@@ -278,7 +281,7 @@ label4 = matplotlib.lines.Line2D([], [], marker = 'o', linestyle='None',
         label = 'TENDL (IAEA)', color = orange)
 legend = ax2.legend(handles=[label1, label2, label3, label4], framealpha = 1)
 for txt in legend.get_texts():
-    if txt.get_text().startswith('ENDF-B/'):
+    if txt.get_text().startswith('ENDF/B-'):
         txt.set_color(green)
     elif txt.get_text().startswith('JEF'):
         txt.set_color(blue)
@@ -288,32 +291,33 @@ for txt in legend.get_texts():
         txt.set_color(orange)
 
 #---
-#  Add annotations for several important points
+#  Add manually annotations for several important points
 #---
 # https://matplotlib.org/stable/tutorials/text/annotations.html#basic-annotation
-for [evaluation, text, va, ha, addx, addy] in [['ENDF-B/I', 'I', 'top', 'right', 0, 0],
-                                               ['ENDF-B/II', 'II', 'top', 'left', 0, 0],
-                                               ['ENDF-B/III', 'III', 'bottom', 'center', 0, 0],
-                                               ['ENDF-B/IV', 'IV', 'bottom', 'left', 0, 0],
+for [evaluation, text, va, ha, addx, addy] in [['ENDF/B-I', 'I', 'top', 'right', 0, 0],
+                                               ['ENDF/B-II', 'II', 'top', 'left', 0, 0],
+                                               ['ENDF/B-III', 'III', 'bottom', 'center', 0, 0],
+                                               ['ENDF/B-IV', 'IV', 'bottom', 'left', 0, 0],
                                                ['JENDL-1', 'JENDL-1', 'center', 'left', 0, -1],
-                                               ['ENDF-B/V.2', 'ENDF-B/V.2', 'center', 'left', 0, -1],
+                                               ['ENDF/B-V.2', 'ENDF/B-V.2', 'center', 'left', 0, -1],
                                                ['JENDL-2', 'JENDL-2', 'center', 'left', 0, -1],
                                                ['JEF-1', 'JEF-1', 'top', 'right', 0, 0],
                                                ['JENDL-3.1', 'JENDL-3.1', 'bottom', 'right', 0, 0],
                                                ['JEF-2.2', 'JEF-2.2', 'top', 'center', 0, -2],
                                                ['JENDL-3.2', '3.2', 'bottom', 'center', 0, 0],
-                                               ['ENDF-B/VI.6', 'VI', 'top', 'center', 0, -4],
+                                               ['ENDF/B-VI.6', 'VI', 'top', 'center', 0, -4],
                                                ['JEFF-3.0', '3.0', 'top', 'left', 0, 0],
                                                ['JEFF-3.1', '3.1', 'bottom', 'right', 0, 0],
                                                ['JEFF-3.1.1', '3.1.1', 'top', 'center', 0, 0],
                                                ['JEFF-3.1.2', '3.1.2', 'center', 'left', 0, -1],
-                                               ['ENDF-B/VII.0', 'VII.0', 'bottom', 'center', 0, 0],
+                                               ['ENDF/B-VII.0', 'VII.0', 'bottom', 'center', 0, 0],
                                                ['JENDL-4.0', '4.0', 'bottom', 'center', 0, 2],
-                                               ['ENDF-B/VII.1', 'VII.1', 'center', 'left', 0, -1],
-                                               ['JEFF-3.3', 'JEFF-3.3', 'center', 'right', 0, -1],
-                                               ['ENDF-B/VIII.0', 'VIII.0', 'top', 'center', 0, -2],
-                                               ['JEFF-4T2.2', '4T2.2', 'bottom', 'right', 9, -1],
-                                               ['JENDL-5', 'JENDL-5', 'top', 'right', 0, 0]]:
+                                               ['ENDF/B-VII.1', 'VII.1', 'center', 'left', 0, -1],
+                                               ['JEFF-3.3', 'JEFF-3.3', 'center', 'right', 0, 3],
+                                               ['ENDF/B-VIII.0', 'VIII.0', 'top', 'right', 2, 0],
+                                               ['JEFF-4T4', '4T4', 'bottom', 'right', 9, -1],
+                                               ['JENDL-5', 'JENDL-5', 'top', 'right', 0, 0],
+                                               ['ENDF/B-VIII.1', 'VIII.1', 'top', 'center', -9.5, -2]]:
     offset = 5
     # Vertical alignement
     if va == 'bottom':
@@ -330,8 +334,8 @@ for [evaluation, text, va, ha, addx, addy] in [['ENDF-B/I', 'I', 'top', 'right',
     elif ha == 'center':
         xoffset = 0 + addx
     # Evaluation-dependent color
-    if evaluation.startswith('ENDF-B'):
-        color = green # As in ENDF-B/VIII.0 logo : https://www.nndc.bnl.gov/endf-b8.0/
+    if evaluation.startswith('ENDF/B'):
+        color = green # As in ENDF/B-VIII.0 logo : https://www.nndc.bnl.gov/endf-b8.0/
     elif evaluation.startswith('JEF'):
         color = blue # As in European flag
     elif evaluation.startswith('JENDL-'):
@@ -345,16 +349,24 @@ for [evaluation, text, va, ha, addx, addy] in [['ENDF-B/I', 'I', 'top', 'right',
                  textcoords = 'offset points',
                  va = va, ha = ha)
 
-# title='Number of materials in evaluations in ENDF-6 format'
-# title='Nombre de matériaux dans les évaluations au format ENDF-6'
-
-# The term "material" refers either to a single isotope, or a mixture of isotopes: a natural element, a molecule, an alloy, lumped fission products, etc.
-# Le terme "matériau" désigne soit un isotope unique, soit un mélange d'isotopes : un élément naturel, une molécule, un alliage, des produits de fission regroupés, etc.
-
+#---
+#  Save the plot in png (high resolution), pdf and eps
+#---
 fig.savefig('NbIso.png', bbox_inches='tight', dpi=600)
 fig.savefig('NbIso.pdf', bbox_inches='tight')
 os.system('pdftops -level3 -eps NbIso.pdf NbIso.eps')
 
+# Suggested plot title:
+# title='Number of materials in nuclear data evaluations in ENDF format'
+# title='Nombre de matériaux dans les évaluations de données nucléaires au format ENDF'
+
+# Suggested comment:
+# The term "material" refers either to a single isotope, or a mixture of isotopes: a natural element, a molecule, an alloy, lumped fission products, etc.
+# Le terme "matériau" désigne soit un isotope unique, soit un mélange d'isotopes : un élément naturel, une molécule, un alliage, des produits de fission regroupés, etc.
+
+#---
+#  Estimate with a linear fit when traditional evaluations will reach 2800 isotopes (as TENDL does)
+#---
 # https://pythonnumericalmethods.berkeley.edu/notebooks/chapter16.04-Least-Squares-Regression-in-Python.html
 def func(x, a, b):
     y = a*x + b

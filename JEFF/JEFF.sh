@@ -7,7 +7,7 @@ rm -f cut.txt
 echo "NbIso['JEF-2.2'] = "$NbIso
 
 # Subsequent versions
-for version in "3.0" "3.1" "3.1.1" "3.1.2" "3.3" "4T2.2"
+for version in "3.0" "3.1" "3.1.1" "3.1.2" "3.3" "4T4"
 do
     if [[ "$version" == "3.0" ]]; then
         prefix="JEFF30N"
@@ -19,7 +19,7 @@ do
         prefix="JEFF312N"
     elif [[ "$version" == "3.3" ]]; then
         prefix=""
-    elif [[ "$version" == "4T2.2" ]]; then
+    elif [[ "$version" == "4T4" ]]; then
         prefix=""
     fi
     NbIso=$(ls JEFF-"$version"/"$prefix"* | wc -l)
